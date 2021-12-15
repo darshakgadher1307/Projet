@@ -591,6 +591,7 @@ a.arrow-link:hover{
 .cust-user .container .nav{max-width: 960px;}
 .cust-user .container ul{background-color: #f6f6f6; max-width: 1000px;}
 .cust-user .container ul li{min-width: 455px;}
+.cust-user .container .tab-content .que-ans [aria-expanded="true"] img{transform: rotate(90deg);transition: 0.5s;}
 .cust-user .container .nav-tabs .nav-link{border-bottom: 2px solid #1d7a8c; height: 60px; font-size: 24px; line-height: 45px; color: #646464; text-transform: uppercase; font-family: 'Roboto';}
 .cust-user .container .nav-tabs .nav-link.active{background-color: #1d7a8c; color: #fff; }
 
