@@ -27,80 +27,21 @@ p{
     color: #4f4f4f; 
     line-height: 1.3;
 }
-.header-block{
+.header-block .faq-header{
     padding: 10px 17px;
-    width: 100%;
-    position: fixed;
     background-color: transparent;
-    z-index: 10;
 }
-.header-right{
-    height: 100%;
-    margin-top: 40px;
-}
-
-.header-right .navbar .nav-item+.nav-item{
-    margin-left: 20px;
-} 
-.fixed{
+.fixed .faq-header{
     background-color: #73706C;
 }
-.fixed a img#logo{
+.fixed .faq-header a img#logo{
     width: 130px;
 }
-.fixed .header-right{
-    margin-bottom: 10px;
-}
-.navbar .nav-item .nav-link:not(.border-btn) { 
-    color: #fff; 
-    font-size: 17px;
-    /* transition: all 0.3s; */
-    position: relative;
-    padding: 0;
-}
-.navbar-expand-lg .navbar-nav .nav-item .border-btn{
-    border-radius: 20px; 
-    border: solid 1px rgba(255, 255, 255, 0.5); 
-    height: 40px; 
-    line-height: 38px; 
-    padding: 0 20px; 
-    color: #fff; 
-    font-size: 16px; 
-    transition: all 0.3s;
-    min-width: 94px; 
-    text-align: center; 
-}
-.navbar-expand-lg .navbar-nav .nav-item .border-btn:hover{
-    background-color: #fff;
-    color: #4F4F4F; 
-}
-.nav-item a{
+.header-right .nav-item a{
     font-size: 17x;
     font-family: 'Roboto',sans-serif;
     line-height: 1.41;
     color: #fff;
-}
-/* .nav-link .hover{
-    width: 0px;
-    background: transparent;
-    height: 5px;
-} */
-/* .nav-item a:hover{
-    height: 3px;
-    background-color: #fff;
-    max-width: 110px;
-    transition: width 3s;
-    transition-timing-function: ease;
-} */
-.drop-down{
-    margin-top: 15px;
-    margin-left: 20px;
-    position: relative;
-    display: block;
-}
-.drop-down select{
-    background: transparent;
-    border: none;
 }
 .navbar .navbar-toggler{
     border: 2px solid #fff;
@@ -112,11 +53,6 @@ p{
 .navbar .navbar-toggler:focus{
     box-shadow: none;
 }
-/* .btn-border{
-    border: 1px solid #FFFFFF80;
-    border-radius: 20px ;
-    padding: 0 20px;
-} */
 
 .hero-banner{
     padding: 200px 0 70px;
@@ -222,9 +158,7 @@ p{
 .banner-step .row .col-lg-3:nth-child(odd) .step:before{
     background-image: url(image/step-arrow-1-copy.png);
 }
-/* .banner-step .row .col-lg-3:first-child .step{
-    margin-left: 115px;
-} */
+
 
 .scroll-down{
     position: relative;
@@ -611,21 +545,195 @@ a.arrow-link:hover{
 .footer-2 a:hover{
     background-color: #d1bd08;
 }
-
-
 @media(max-width:1300px) {
-    .header-block a img#logo{
-        width: 150px;
+    .header-block .faq-header a img#logo{
+        width: 100px;
     }
     .header-right .navbar .nav-item+.nav-item{
         margin-left: 10px;
         padding: 0;
     } 
 }
-@media(max-width:991px) {
-    .header-block{ background-color: #4f4f4f; }
-    .header-right .navbar .nav-item+.nav-item{ margin-left: 5px; padding: 0;} 
-    .header-block a img#logo{ max-width: 100px; width: 100%;}
-    .banner-step .row .col-lg-3+.col-lg-3 .step:before{ left: 0;}
+@media(max-width:992px) {
+    .header-block .faq-header{ background-color: #4f4f4f; }
+}
+
+
+
+/* --------FAQ------------- */
+
+.faq-header{ position: fixed; z-index: 10; background-color: #525252; width: 100%;}
+.faq-header .container{ max-width: 1520px;}
+.faq-header .container ul li a{font-family: 'Roboto';font-size: 17px;color: #fff;line-height: 24px;}
+.faq-header .container ul li a#a1{position: relative;}
+.faq-header .container ul li a#a1:hover{color: #fff;}
+.faq-header .container ul li a#a1::before{content: '';position: absolute;display: block; width: 100%; height: 2px;bottom: 0; left: 0;background-color: #fff;transform: scaleX(0);transition: transform 0.5s ease; transform-origin: left;}
+.faq-header .container ul li a#a1:hover::before{transform: scaleX(1);}
+.faq-header .navbar-nav .nav-item{margin-left: 20px;}
+.faq-header .container .navbar-nav .nav-item .border-btn{ height: 40px; border-radius: 20px; background-color:#29626d ;border: solid 1px rgba(255, 255, 255, 0.5);padding-right: 20px; padding-left: 20px;}
+.faq-header .container .navbar-nav .nav-item .border-btn:hover{background-color: #fff;
+    color: #4F4F4F; }
+.faq-header .container .navbar-nav .nav-item .border-btn-bg:hover{background-color: #fff;
+    color: #4F4F4F;}
+.faq-header .container .navbar-nav .nav-item .border-btn-bg{height: 40px; border-radius: 20px; border: solid 1px rgba(255, 255, 255, 0.5);padding-right: 20px; padding-left: 20px;}
+
+.banner img{width:100%; height: 450px; padding-top: 80px;}
+
+.faq-section{padding: 40px 80px;}
+.faq-section .container{max-width: 1100px;}
+.faq-section .container h2{color: #4f4f4f; font-size: 36px; font-family: 'Roboto';line-height: 24px;}
+.faq-section .container img{margin-top: 15px; margin-bottom: 40px;}
+.faq-section .container .line1{height: 1px; background-color: #ccc; width: 62px; margin: 26px 9px 49px;}
+.faq-section .container .line2{height: 1px; background-color: #ccc; width: 62px; margin: 26px 9px 49px;}
+.faq-section .container .intro p{color: #646464;text-align: center; font-size: 18px; font-family: 'Roboto'; margin: 0; line-height: 24px; padding-bottom: 5px;}
+
+.cust-user{padding: 10px 100px;}
+.cust-user .container .nav{max-width: 960px;}
+.cust-user .container ul{background-color: #f6f6f6; max-width: 1000px;}
+.cust-user .container ul li{min-width: 455px;}
+.cust-user .container .nav-tabs .nav-link{border-bottom: 2px solid #1d7a8c; height: 60px; font-size: 24px; line-height: 45px; color: #646464; text-transform: uppercase; font-family: 'Roboto';}
+.cust-user .container .nav-tabs .nav-link.active{background-color: #1d7a8c; color: #fff; }
+
+.content{padding: 30px 0;}
+.content .container{max-width: 950px; padding: 10px 0;}
+.content .container .que-ans{padding: 10px 10px;}
+.content .container .ans{ margin-left: 40px;}
+.content .container .ans p{ font-weight: normal; line-height: 24px;}
+.content .container button{border: none; background: transparent; height: fit-content; margin-right: 5px;}
+.content .container p{font-size: 16px; font-family: 'Roboto'; color: #646464; font-weight: bold; line-height: 1.6;}
+
+.faq-news .newsletter{padding: 40px; background-color: #fff;}
+.faq-footer .footer-1{padding-top: 25px; padding-bottom: 2px;}
+.footer .line {height: 1px; background-color: #424242; max-width: 1320px; margin: 20px auto;}
+.copyright p{font-size: 14px; line-height: 1.71; color: #9ba0a3; font-family: 'Roboto';}
+.copyright #p2{margin-left: 20px;}
+.copyright #p3{color: #737381;}
+
+@media(max-width:1134px){
+    .cust-user .container ul li{min-width: 400px;}
+}
+@media(max-width:1100px){
+    .faq-header .navbar-nav .nav-item{margin-left: 10px;}
+}
+@media(max-width:1024px){
+    .cust-user .container ul li{min-width: 390px;}
+}
+@media(max-width:1004px){
+    .cust-user .container ul li{min-width: 370px;}
+}
+@media(max-width:991px){
+    .faq-header .container .navbar-nav .nav-item .border-btn{background-color: transparent; border: none; padding-right: 0px; padding-left: 0px;}
+    .faq-header .container .navbar-nav .nav-item .border-btn:hover{background-color: transparent; border: none; color:#29626d}
+    .faq-header .container .navbar-nav .nav-item .border-btn-bg:hover{background-color: transparent; border: none; color:#29626d}
+    .faq-header .container .navbar-nav .nav-item .border-btn-bg{background-color: transparent; border: none; padding-right: 0px; padding-left: 0px;}
+    .faq-header .container ul li a#a1:hover{transform: none; transition: none; color: #29626d;}
+    .faq-header .container ul li a#a1::before{content: none;}
+    
+    .cust-user .container ul li{min-width: 320px;}
+    .cust-user .container .nav{max-width: 320px;}
+    .faq-footer .footer-1 .row .col-lg-2 .footer-logo{ width: fit-content; margin: auto;}
+    .faq-footer .footer-1 .row .col-lg-2 .social-media{ width: fit-content; margin: auto;}
+    .footer-1 a img#logo{ margin-left: 0px;}
+
     
 }
+@media(max-width:596px){
+.content .container .que-ans{width:350px ; }
+}
+@media(max-width:560px){
+    .content .container .que-ans{width:350px ; margin-left: -40px; }
+}
+@media(max-width:490px){
+    .content .container .que-ans{width:350px ; margin-left: -50px; }
+}  
+@media(max-width:446px){
+    .content .container .que-ans{width:350px ; margin-left: -60px; }
+}
+@media(max-width:402px){
+    .content .container .que-ans{width:350px ; margin-left: -90px; }
+}  
+@media(max-width:360px){
+    .content .container .que-ans{width:350px ; margin-left: -100px; }
+}
+.price .price-info{ max-width: 550px; height: 300px; border: 1px solid #b0c9ce; margin: 0 auto;} 
+.price .price-info h2{color: #fff; background-color: #1d7a8c; height: 58px; margin: auto; line-height: 1.86;
+font-size: 28px; font-family: 'Roboto';}
+.price .price-info .price-detail{margin-top: 30px;}
+.price .price-info .price-detail p{color: #646464; font-family: 'Roboto'; line-height: 0.8;}
+.price .price-info .price-detail p#p1{font-size: 48px; margin-right: 9px;}
+.price .price-info .price-detail p#p2{font-size: 48px; font-weight: bold; margin-right: 3px;}
+.price .price-info .price-detail p#p3{font-size: 30px;margin-top: 12px; font-weight: normal;} 
+.price .price-info .point{margin: 0 150px; padding-top: 20px;}
+.price .price-info .point .p1 img{margin: 0; width: 25px; height: 24px; margin-right: 8px;} 
+.price .price-info .point .p1 p{font-size: 16px; font-family: 'Roboto'; color: #646464; line-height: 1.5;}
+.price .line{height: 1px; max-width: 1000px; background-color: #dcdcdc; margin: 50px 0;}
+.price .extra-info .image{border: 1px solid #b0c9ce; width: 100px; height: 100px ; border-radius: 50%; margin-left: 45px;}  
+.price .extra-info .image img{margin: 25px 0;}
+.price .extra-info .img3 img {margin: 35px 0; }
+.price .extra-info h3{padding-top: 15px; font-size: 16px; font-family: 'Roboto'; color: #646464;line-height: 1.38; font-weight: normal; margin-bottom: 5px;}
+.price .extra-info p{ font-size: 18px; font-family: 'Roboto'; color: #1d7a8c;line-height:1.44; font-weight: bold;}
+
+.include{background-color: #f6f6f6;}
+.include .container{max-width: 1200px;}
+.include .faq-section{padding: 70px 0;}
+.include .row img{margin-bottom: 20px;}
+.include .row h3{font-size: 20px; color: #4f4f4f; font-family: 'Roboto'; font-weight: bold; line-height: 1.2; text-align: left; margin-left: 7px;}
+.include .row .col-lg-4:first-child{margin-bottom: 35px;}
+.include .row .details{padding-top: 15px;}
+.include .row .point img{margin:0 10px 0 7px; height: fit-content;}
+
+.whyhelperland{padding-top: 50px;}
+.whyhelperland .container{max-width: 1200px;}
+.whyhelperland .container .row h3{font-size: 20px;font-family: 'Roboto'; font-weight: bold;color: #646464; line-height: 1.2;}
+.whyhelperland .container .row p{font-size: 14px; font-family: 'Roboto';font-weight: normal; color: #646464; line-height: 1.43; max-width: 290px;}
+.whyhelperland .container .row .col-lg-4:first-child P{margin-left: 80px;}
+.whyhelperland .container .row #p1{margin-bottom: 40px;}
+
+.price-news{background-color: #fff;}
+
+@media(max-width: 1149px){
+    .include .faq-section .container .row p{font-size: 15px;}
+    .include .row img#i1{width: -webkit-fill-available;}
+}
+@media(max-width: 1149px){
+    .include .faq-section .container .row p{font-size: 14px;}
+}
+@media(max-width: 1028px){
+    .include .faq-section .container .row p{font-size: 13px;}
+}
+@media(max-width: 1005px){
+    .price .extra-info .image{margin: auto;}  
+}
+@media(max-width: 992px){
+    .whyhelperland .container .row h3 {text-align: center;}
+    .whyhelperland .container .row #p1{margin: 5px auto 25px auto;}
+    .whyhelperland .container .row p{text-align: center; margin: 0 auto 0 auto;}
+    .whyhelperland .container .row .col-lg-4:first-child p{margin: 0 auto 15px auto;}
+    .include .row img#i1{width: auto;}
+    .include .row h3{width: fit-content;margin: auto;}
+    .include .row .details{width: fit-content;margin: auto;}
+    .price-sec .container h2#p1{width: fit-content; margin: auto;}
+} 
+@media(max-width: 497px){
+    .whyhelperland .faq-section .container h2{font-size:25px}
+}  
+@media(max-width: 380px){
+    .include .row img#i1{width: -webkit-fill-available;}
+    .price-sec {padding-right: 0;padding-left: 0;}
+}
+@media(max-width: 731px){
+    .price .price-info .point{width: max-content; margin: auto;}
+}
+@media(max-width: 510px){
+    .whyhelperland .container .row .col-lg-4 img{width: -webkit-fill-available;}
+}
+@media(max-width: 472px){
+    .include .faq-section .container h2{font-size: 25px;}
+}
+@media(max-width: 465px){
+    .price .price-info{width: max-content;}
+}
+@media(max-width: 410px){
+    .faq-section .container .extra-service h2{font-size: 30px;}
+}
+
