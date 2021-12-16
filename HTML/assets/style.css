@@ -751,8 +751,18 @@ font-size: 28px; font-family: 'Roboto';}
 .form-group .blue{background-color: #1d7a8c; color: #fff; font-size: 20px; font-family: 'Roboto'; font-weight: bold; border: none; width: 133px; height: 40px; border-radius: 23px;}
 .form-group .blue:hover{ background-color: #4f4f4f;}
 
-.map .banner img{margin: 50px 0;}
+.map .banner{margin: 50px 0;}
 
 @media(max-width:560px){
     .faq-section{padding-left: 20px; padding-right: 20px;}
+}
+
+/*-------------------About----------------------*/
+.about-banner .banner img{margin-top: 75px;}
+.word-about .faq-section{padding-bottom: 0px;}
+.word-about .faq-section .container p{max-width: 982px; margin: 0 auto; color: #646464; line-height: 1.5; font-family: 'Roboto';}
+.about-news{padding-top: 50px;}
+
+@media(max-width: 400px){
+    .word-about .faq-section .container h2{line-height: 40px;}
 }
